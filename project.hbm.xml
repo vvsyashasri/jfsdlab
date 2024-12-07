@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "EN" "http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+  <!-- Mapping for Project Entity -->
+  <class name="com.klef.jfsd.exam.Project" table="project">
+    <id name="id" column="id">
+      <generator class="increment"/>
+    </id>
+    <property name="projectName" column="project_name" />
+    <property name="duration" column="duration" />
+    <property name="budget" column="budget" />
+    <property name="teamLead" column="team_lead" />
+  </class>
+
+</hibernate-mapping>
